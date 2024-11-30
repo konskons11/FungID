@@ -2,27 +2,30 @@
 
 [![Downloads](https://img.shields.io/github/downloads/konskons11/ViRAE/total?style=flat-square)](https://github.com/konskons11/ViRAE/releases)
 
-FungID is a pilot software/application designed to revolutionize the identification of fungal species by leveraging advanced machine learning techniques and chromogenic profiling. This innovative tool utilizes a unique approach, firstly scanning the input image(s) for detectable Petri dishes and then analyzing the distinctive color patterns of fungal colonies to accurately classify the examined species. 
+FungID is a pilot software/application designed to revolutionize the identification of fungal species by leveraging advanced machine learning techniques and chromogenic profiling. This innovative tool utilizes a unique approach, scanning image(s) input by the user for detectable culture plates (i.e. Petri dishes) and analyzing the distinctive color patterns of fungal colonies to accurately classify the examined species. 
 
-Implemented using Python 3.8, FungID integrates a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset, and other key libraries such as tkinter for the GUI, cv2 (OpenCV) for image processing, numpy for numerical operations, h5py for handling HDF5 files, PIL (Pillow) for image manipulation, and tensorflow.keras (TensorFlow) for building and training the neural network model. The application features a user-friendly GUI, offering functionalities such as parameter adjustments for Petri dish detection, real-time monitoring of training progress, and direct visualization of classification results, thus making it accessible to both researchers and practitioners, regardless of their technical expertise. 
+Implemented using Python 3.8, FungID integrates a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset, and other libraries such as tkinter for the GUI, cv2 (OpenCV) for image processing, numpy for numerical operations, h5py for handling HDF5 files, PIL (Pillow) for image manipulation, and tensorflow.keras (TensorFlow) for building and training the neural network model. The application features a user-friendly GUI, offering functionalities such as parameter adjustments for efficient culture plate detection, real-time monitoring of training progress, and direct visualization of classification results, thus making it accessible to both researchers and practitioners, regardless of their technical expertise. 
 
 Further development of FungID is expected to be particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
 
 ## FungID key features
 
 ### Training Mode
-Train your own model with new images using built-in functionalities for data augmentation, early stopping, and model checkpointing.
+
+_Custom Model Training:_ Input the desired image(s) and utilize built-in features such as data augmentation, early stopping, and model checkpointing to train and ensure the best-performing version of your model is saved.
 
 _Data Augmentation:_ Utilizes ImageDataGenerator to enhance the training dataset with transformations such as rotation, scaling, and flipping, improving model robustness.
 
-_Real-Time Monitoring:_ The GUI displays real-time training progress, including accuracy and loss metrics, with adjustable parameters for circle detection.
-
-_Image Processing:_ Preprocesses images using OpenCV techniques, including Gaussian blurring and Hough Circle Transform for detecting the circular regions of Petri dishes with the examined fungal species.
-
-_Performance Metrics:_ Training accuracy, loss, validation accuracy, and validation loss are tracked and visualized with an option to be exported as graphs by the user.
+_Real-Time Monitoring and Performance Metrics:_ The GUI displays real-time training progress and plots model performance metrics, including accuracy, loss, validation accuracy, and validation loss, with an option to be exported as graphs by the user.
 
 ### Testing Mode
 Classify new images using pre-trained models with ease.
+
+Multi-Plate Detection: The software can detect multiple petri dishes within a single image.
+
+Parameter Adjustments: Users can tweak parameters for petri dish detection to optimize performance.
+
+_Image Processing:_ Preprocesses images using OpenCV techniques, including Gaussian blurring and Hough Circle Transform for detecting the circular regions of culture plates with the examined fungal species.
 
 _Comprehensive Results:_ Visualize detected circular regions of Petri dishes and display classified results with predicted species and confidence levels. Options to save classification reports and processed images are also provided.
 
