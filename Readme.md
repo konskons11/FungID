@@ -5,19 +5,22 @@ FungID
 
 FungID is a pilot software/application designed to revolutionize the identification of fungal species by leveraging advanced machine learning techniques and chromogenic profiling. This innovative tool utilizes a unique approach, firstly scanning the input image(s) for detectable Petri dishes and then analyzing the distinctive color patterns of fungal colonies to accurately classify the examined species. Implemented using Python 3.8, FungID integrates a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset, and other key libraries such as tkinter for the GUI, cv2 (OpenCV) for image processing, numpy for numerical operations, h5py for handling HDF5 files, PIL (Pillow) for image manipulation, and tensorflow.keras (TensorFlow) for building and training the neural network model. The application features a user-friendly GUI, offering functionalities such as parameter adjustments for Petri dish detection, real-time monitoring of training progress, and direct visualization of classification results, thus making it accessible to both researchers and practitioners, regardless of their technical expertise. Further development of FungID is expected to be particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
 
-## FungID features
+## FungID key features
 
-**Training Mode:** Train the model with new images using built-in functionalities for data augmentation, early stopping, and model checkpointing.
+_Training Mode:_ Train the model with new images using built-in functionalities for data augmentation, early stopping, and model checkpointing.
+
+_Data Augmentation:_ Utilizes ImageDataGenerator to enhance the training dataset with transformations such as rotation, scaling, and flipping, improving model robustness.
+
+_Real-Time Monitoring:_ The GUI displays real-time training progress, including accuracy and loss metrics, with adjustable parameters for circle detection.
+
+_Image Processing:_ Preprocesses images using OpenCV techniques, including Gaussian blurring and Hough Circle Transform for detecting the circular regions of Petri dishes with the examined fungal species.
+
+_Performance Metrics:_ Training accuracy, loss, validation accuracy, and validation loss are tracked and visualized with an option to be exported as graphs by the user.
 
 _Testing Mode:_ Classify new images using pre-trained models with ease.
 
-Data Augmentation: Utilizes ImageDataGenerator to enhance the training dataset with transformations such as rotation, scaling, and flipping, improving model robustness.
+_Comprehensive Results:_ Visualize detected circular regions of Petri dishes and display classified results with predicted species and confidence levels. Options to save classification reports and processed images are also provided.
 
-Real-Time Monitoring: The GUI displays real-time training progress, including accuracy and loss metrics, with adjustable parameters for circle detection.
-
-Image Processing: Preprocesses images using OpenCV techniques, including Gaussian blurring, Sobel operator for edge detection, and Hough Circle Transform for detecting circular regions.
-
-Comprehensive Results: Visualize detected circular regions and display classified results with predicted species and confidence levels. Options to save classification reports and processed images are provided.
 
 Technical Details
 Core Libraries:
@@ -38,7 +41,6 @@ Concurrency: threading
 
 Model Architecture: The core of the algorithm is a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset. The workflow includes data preparation, image preprocessing, and feature extraction followed by classification.
 
-Performance Metrics: Accuracy, loss, validation accuracy, and validation loss are tracked and visualized. Confusion matrices and ROC-AUC curves are generated to evaluate model performance, with metrics such as sensitivity, specificity, precision, NPV, F1 score, and MCC calculated for comprehensive evaluation.
 
 Medical Relevance
 FungID is particularly valuable for identifying fungal species of medical importance, such as Aspergillus sp., Alternaria sp., Fusarium sp., and Penicillium sp. Accurate and prompt identification of these fungi is crucial for diagnosing infections, especially in immunocompromised patients, enabling timely and appropriate treatment.
