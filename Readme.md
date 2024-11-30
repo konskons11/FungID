@@ -3,7 +3,7 @@ FungID
 
 [![Downloads](https://img.shields.io/github/downloads/konskons11/ViRAE/total?style=flat-square)](https://github.com/konskons11/ViRAE/releases)
 
-FungiID is a software project designed to help researchers and practitioners accurately classify various fungal species using advanced machine learning techniques. The tool combines a robust Convolutional Neural Network (CNN) model with a user-friendly Graphical User Interface (GUI).
+FungID is a software project designed to help researchers and practitioners accurately classify various fungal species using advanced machine learning techniques. The tool combines a robust Convolutional Neural Network (CNN) model with a user-friendly Graphical User Interface (GUI).
 
 
 
