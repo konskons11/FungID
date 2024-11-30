@@ -1,10 +1,11 @@
 FungID
 =======
 
+[![Downloads](https://img.shields.io/github/downloads/konskons11/ViRAE/total?style=flat-square)](https://github.com/konskons11/ViRAE/releases)
+
 FungiID is a software project designed to help researchers and practitioners accurately classify various fungal species using advanced machine learning techniques. The tool combines a robust Convolutional Neural Network (CNN) model with a user-friendly Graphical User Interface (GUI).
 
 
-[![Downloads](https://img.shields.io/github/downloads/konskons11/ViRAE/total?style=flat-square)](https://github.com/konskons11/ViRAE/releases)
 
 Viral Reads Assembly Enhancer (ViRAE) is a context-based trimming bioinformatics tool, especially designed for viral metagenomics, which allows Next Generation Sequencing (NGS) read decontamination based on any given reference sequence(s). ViRAE is powered by an updated version of [Zero-Waste Algorithm (ZWA)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009304) and incorporates ready-to-use well-established bioinformatics software to detect and dissect partially mapped reads (chimeric reads) by specifically removing the moieties, which align to the given reference sequence(s). The clean output reads enhance _de novo_ assembly performance, increasing the availability of reads for more accurate and more efficacious _de novo_ virus genome assembly.
 
