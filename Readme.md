@@ -14,20 +14,17 @@ Further development of FungID is expected to be particularly valuable in clinica
 
 _Custom Model Training:_ Input the desired image(s) and utilize built-in features such as data augmentation, early stopping, and model checkpointing to train and ensure the best-performing version of your model is saved.
 
-_Data Augmentation:_ Utilizes ImageDataGenerator to enhance the training dataset with transformations such as rotation, scaling, and flipping, improving model robustness.
+_Data Augmentation:_ ImageDataGenerator is utilized to enhance the training dataset with transformations such as rotation, scaling, and flipping, improving model robustness.
 
 _Real-Time Monitoring and Performance Metrics:_ The GUI displays real-time training progress and plots model performance metrics, including accuracy, loss, validation accuracy, and validation loss, with an option to be exported as graphs by the user.
 
 ### Testing Mode
-Classify new images using pre-trained models with ease.
 
-Multi-Plate Detection: The software can detect multiple petri dishes within a single image.
-
-Parameter Adjustments: Users can tweak parameters for petri dish detection to optimize performance.
+_Parameter Adjustments for Fungal Species Detection:_ The user is able to detect multiple culture plates within a single input image and also tweak various software parameters in order to optimize fungal species detection.
 
 _Image Processing:_ Preprocesses images using OpenCV techniques, including Gaussian blurring and Hough Circle Transform for detecting the circular regions of culture plates with the examined fungal species.
 
-_Comprehensive Results:_ Visualize detected circular regions of Petri dishes and display classified results with predicted species and confidence levels. Options to save classification reports and processed images are also provided.
+_Comprehensive Results:_ Visualize detected circular regions of culture plates and display classified results with predicted species and confidence levels. (Options to save classification reports and processed images are also provided)
 
 
 Technical Details
@@ -50,8 +47,6 @@ Concurrency: threading
 Model Architecture: The core of the algorithm is a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset. The workflow includes data preparation, image preprocessing, and feature extraction followed by classification.
 
 
-Medical Relevance
-FungID is particularly valuable for identifying fungal species of medical importance, such as Aspergillus sp., Alternaria sp., Fusarium sp., and Penicillium sp. Accurate and prompt identification of these fungi is crucial for diagnosing infections, especially in immunocompromised patients, enabling timely and appropriate treatment.
 
 
 User manual
