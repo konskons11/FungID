@@ -3,15 +3,10 @@ FungID
 
 [![Downloads](https://img.shields.io/github/downloads/konskons11/ViRAE/total?style=flat-square)](https://github.com/konskons11/ViRAE/releases)
 
-FungID is a software project designed to help researchers and practitioners accurately classify various fungal species using advanced machine learning techniques. The tool combines a robust Convolutional Neural Network (CNN) model with a user-friendly Graphical User Interface (GUI).
+FungID is a pilot software project designed to revolutionize the identification of fungal species by leveraging advanced machine learning techniques and chromogenic profiling. This innovative tool utilizes a unique approach, analyzing the distinctive color patterns of fungal colonies to accurately classify various fungi. Implemented in Python, FungID integrates powerful libraries such as TensorFlow, OpenCV, and PIL, ensuring robust performance and ease of use. The software features a user-friendly Graphic User Interface (GUI) built with tkinter, making it accessible to both researchers and practitioners, regardless of their technical expertise. The application is particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
 
 
 
-Viral Reads Assembly Enhancer (ViRAE) is a context-based trimming bioinformatics tool, especially designed for viral metagenomics, which allows Next Generation Sequencing (NGS) read decontamination based on any given reference sequence(s). ViRAE is powered by an updated version of [Zero-Waste Algorithm (ZWA)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009304) and incorporates ready-to-use well-established bioinformatics software to detect and dissect partially mapped reads (chimeric reads) by specifically removing the moieties, which align to the given reference sequence(s). The clean output reads enhance _de novo_ assembly performance, increasing the availability of reads for more accurate and more efficacious _de novo_ virus genome assembly.
-
-The concept behind the ViRAE pipeline is outlined in the figure below:
-
-![ViRAE_pipeline](https://i.imgur.com/rvJr0cC.png "ViRAE_pipeline")
 
 _**IMPORTANT NOTE:**_
 ViRAE focuses on the identification and decontamination of partially mapped (chimeric) NGS reads on any given reference sequence(s). For optimum decontamination, we highly recommend downloading and inputting our [custom SILVA ribosomal database (RiDB)](https://github.com/konskons11/ViRAE/blob/main/Software/Offline/RiDB.fasta.gz) as reference file, containing 603370 seqs of 16S, 18S, 23S and 28S rRNAs from a wide variety of _Archaea_, _Bacteria_ and _Eukarya_ organisms. Noteworthy, _de novo_ assembly of the clean output reads after decontamination is optional, and therefore is not included in the main ViRAE pipeline or the program's prerequisites. However, the user may separately perform _de novo_ assembly on the clean output reads using the software of preference, with [MEGAHIT _de novo_ assembler](https://github.com/voutcn/megahit/releases/tag/v1.2.9) being highly recommended.
