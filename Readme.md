@@ -4,9 +4,9 @@
 
 FungID is a pilot software/application designed to revolutionize the identification of fungal species by leveraging advanced machine learning techniques and chromogenic profiling. This innovative tool utilizes a unique approach, firstly scanning the input image(s) for detectable Petri dishes and then analyzing the distinctive color patterns of fungal colonies to accurately classify the examined species. Implemented using Python 3.8, FungID integrates a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset, and other key libraries such as tkinter for the GUI, cv2 (OpenCV) for image processing, numpy for numerical operations, h5py for handling HDF5 files, PIL (Pillow) for image manipulation, and tensorflow.keras (TensorFlow) for building and training the neural network model. The application features a user-friendly GUI, offering functionalities such as parameter adjustments for Petri dish detection, real-time monitoring of training progress, and direct visualization of classification results, thus making it accessible to both researchers and practitioners, regardless of their technical expertise. Further development of FungID is expected to be particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
 
-# FungID key features
+## FungID key features
 
-## Training Mode
+### Training Mode
 Train your own model with new images using built-in functionalities for data augmentation, early stopping, and model checkpointing.
 
 _Data Augmentation:_ Utilizes ImageDataGenerator to enhance the training dataset with transformations such as rotation, scaling, and flipping, improving model robustness.
@@ -17,7 +17,7 @@ _Image Processing:_ Preprocesses images using OpenCV techniques, including Gauss
 
 _Performance Metrics:_ Training accuracy, loss, validation accuracy, and validation loss are tracked and visualized with an option to be exported as graphs by the user.
 
-## Testing Mode
+### Testing Mode
 Classify new images using pre-trained models with ease.
 
 _Comprehensive Results:_ Visualize detected circular regions of Petri dishes and display classified results with predicted species and confidence levels. Options to save classification reports and processed images are also provided.
