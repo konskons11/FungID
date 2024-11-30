@@ -3,7 +3,16 @@ FungID
 
 [![Downloads](https://img.shields.io/github/downloads/konskons11/ViRAE/total?style=flat-square)](https://github.com/konskons11/ViRAE/releases)
 
-FungID is a pilot software project designed to revolutionize the identification of fungal species by leveraging advanced machine learning techniques and chromogenic profiling. This innovative tool utilizes a unique approach, analyzing the distinctive color patterns of fungal colonies to accurately classify various fungi. Implemented in Python, FungID integrates powerful libraries such as TensorFlow, OpenCV, and PIL, ensuring robust performance and ease of use. The software features a user-friendly Graphic User Interface (GUI) built with tkinter, making it accessible to both researchers and practitioners, regardless of their technical expertise. The application is particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
+FungID is a pilot software/application designed to revolutionize the identification of fungal species by leveraging advanced machine learning techniques and chromogenic profiling. This innovative tool utilizes a unique approach, analyzing the distinctive color patterns of fungal colonies to accurately classify various fungi. 
+
+Implemented using Python 3.x, FungID integrates various libraries for efficient image processing, neural network modeling, and a Graphical User Interface (GUI). Key libraries include tkinter for the GUI, cv2 (OpenCV) for image processing, numpy for numerical operations, h5py for handling HDF5 files, PIL (Pillow) for image manipulation, and tensorflow.keras (TensorFlow) for building and training the neural network model. Additional libraries like matplotlib were used for plotting training performance metrics, and threading was utilized to manage concurrent execution of tasks.
+
+The core of the pilot FungID algorithm is a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset. The workflow begins with data preparation, organizing input images of known fungi species into a directory structure. Images are preprocessed for model compatibility using Gaussian blurring, color channel processing, and Hough Circle Transform for circle detection. Detected circular regions in images, likely containing fungi colonies, are cropped, resized, and fed into the CNN for classification.
+
+
+
+The software features a user-friendly Graphical User Interface (GUI) built with tkinter, making it accessible to both researchers and practitioners, regardless of their technical expertise. The application is particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
+
 
 
 
