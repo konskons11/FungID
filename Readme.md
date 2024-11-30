@@ -7,7 +7,8 @@ FungID is a pilot software/application designed to revolutionize the identificat
 
 ## FungID key features
 
-_Training Mode:_ Train the model with new images using built-in functionalities for data augmentation, early stopping, and model checkpointing.
+# Training Mode
+Train your own model with new images using built-in functionalities for data augmentation, early stopping, and model checkpointing.
 
 _Data Augmentation:_ Utilizes ImageDataGenerator to enhance the training dataset with transformations such as rotation, scaling, and flipping, improving model robustness.
 
@@ -17,7 +18,8 @@ _Image Processing:_ Preprocesses images using OpenCV techniques, including Gauss
 
 _Performance Metrics:_ Training accuracy, loss, validation accuracy, and validation loss are tracked and visualized with an option to be exported as graphs by the user.
 
-_Testing Mode:_ Classify new images using pre-trained models with ease.
+# Testing Mode
+Classify new images using pre-trained models with ease.
 
 _Comprehensive Results:_ Visualize detected circular regions of Petri dishes and display classified results with predicted species and confidence levels. Options to save classification reports and processed images are also provided.
 
