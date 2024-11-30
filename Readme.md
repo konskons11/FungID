@@ -26,33 +26,7 @@ _Image Processing:_ Preprocesses images using OpenCV techniques, including Gauss
 
 _Comprehensive Results:_ Visualize detected circular regions of culture plates and display classified results with predicted species and confidence levels. (Options to save classification reports and processed images are also provided)
 
-
-Technical Details
-Core Libraries:
-
-GUI: tkinter
-
-Image Processing: cv2 (OpenCV), PIL (Pillow)
-
-Neural Network: tensorflow.keras
-
-Numerical Operations: numpy
-
-File Handling: h5py
-
-Plotting: matplotlib
-
-Concurrency: threading
-
-Model Architecture: The core of the algorithm is a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset. The workflow includes data preparation, image preprocessing, and feature extraction followed by classification.
-
-
-
-
-User manual
-=======
-
-## ViRAE standalone application (offline)
+## User manual
 
 ### Installation 
 
