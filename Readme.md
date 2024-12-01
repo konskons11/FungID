@@ -81,7 +81,7 @@ Visualization: Visualize detected circular regions in images, with green circumf
 
 Save Reports: Options to save classification reports and processed images.
 
-### Key fatures
+### Software key features
 
 **Training Mode**
 
