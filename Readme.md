@@ -46,6 +46,9 @@ Upon launching the application, you will see the main interface divided into sev
 
 Mode Selection
 
+supported image formats
+"*.jpg *.jpeg *.png *.bmp *.tiff"
+
 Training Mode: For training the model with new images.
 
 Testing Mode: For testing the model on new images or using a pre-trained model for classification.
