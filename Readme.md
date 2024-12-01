@@ -10,10 +10,9 @@ Further development of FungID is expected to be particularly valuable in clinica
 
 ## User manual
 
-Welcome to the Fungal Species Classifier! This user-friendly application is designed to help you classify fungal species efficiently. This manual will guide you through the various features and functionalities of the GUI to ensure you get the most out of the application.
+Welcome to FungID software! This user-friendly application is designed to help you classify fungal species efficiently. This manual will guide you through the various features and functionalities of the GUI to ensure you get the most out of the application.
 
-Getting Started
-Installation
+### Installation
 
 Clone the repository and install the required dependencies:
 
