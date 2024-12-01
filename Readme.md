@@ -8,24 +8,6 @@ Implemented using Python 3.8.5, FungID integrates a Convolutional Neural Network
 
 Further development of FungID is expected to be particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
 
-## FungID software key features
-
-### Training Mode
-
-_Custom Model Training:_ Input the desired image(s) and utilize built-in features such as data augmentation, early stopping, and model checkpointing to train and ensure the best-performing version of your model is saved.
-
-_Data Augmentation:_ ImageDataGenerator is utilized to enhance the training dataset with transformations such as rotation, scaling, and flipping, improving model robustness.
-
-_Real-Time Monitoring and Performance Metrics:_ The GUI displays real-time training progress and plots model performance metrics, including accuracy, loss, validation accuracy, and validation loss, with an option to be exported as graphs by the user.
-
-### Testing Mode
-
-_Parameter Adjustments for Fungal Species Detection:_ The user is able to detect multiple culture plates within a single input image and also tweak various software parameters in order to optimize fungal species detection.
-
-_Image Processing:_ Preprocesses images using OpenCV techniques, including Gaussian blurring and Hough Circle Transform for detecting the circular regions of culture plates with the examined fungal species.
-
-_Comprehensive Results:_ Visualize detected circular regions of culture plates and display classified results with predicted species and confidence levels. (Options to save classification reports and processed images are also provided)
-
 ## User manual
 
 Welcome to the Fungal Species Classifier! This user-friendly application is designed to help you classify fungal species efficiently. This manual will guide you through the various features and functionalities of the GUI to ensure you get the most out of the application.
@@ -99,7 +81,9 @@ Visualization: Visualize detected circular regions in images, with green circumf
 
 Save Reports: Options to save classification reports and processed images.
 
-### Training Mode
+### Key fatures
+
+**Training Mode**
 
 _Custom Model Training:_ Input the desired image(s) and utilize built-in features such as data augmentation, early stopping, and model checkpointing to train and ensure the best-performing version of your model is saved.
 
@@ -107,7 +91,7 @@ _Data Augmentation:_ ImageDataGenerator is utilized to enhance the training data
 
 _Real-Time Monitoring and Performance Metrics:_ The GUI displays real-time training progress and plots model performance metrics, including accuracy, loss, validation accuracy, and validation loss, with an option to be exported as graphs by the user.
 
-### Testing Mode
+**Testing Mode**
 
 _Parameter Adjustments for Fungal Species Detection:_ The user is able to detect multiple culture plates within a single input image and also tweak various software parameters in order to optimize fungal species detection.
 
