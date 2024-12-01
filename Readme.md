@@ -8,7 +8,7 @@ Implemented using Python 3.8.5, FungID integrates a Convolutional Neural Network
 
 Further development of FungID is expected to be particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
 
-![FungID algorithm](https://imgur.com/a/6cjOCGI.png "FungID algorithm")
+![FungID algorithm](https://i.imgur.com/czlJXCW.png "FungID algorithm")
 
 ## User manual
 
