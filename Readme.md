@@ -6,7 +6,7 @@ FungID is a pilot software/application designed to revolutionize the identificat
 
 Implemented using Python 3.8.5, FungID integrates a Convolutional Neural Network (CNN) based on the VGG16 architecture, pretrained on the ImageNet dataset, and other libraries such as tkinter for the Graphical User Interface (GUI), cv2 (OpenCV) for image processing, numpy for numerical operations, h5py for handling HDF5 files, PIL (Pillow) for image manipulation, and tensorflow.keras (TensorFlow) for building and training the neural network model. The application features a user-friendly GUI, offering functionalities such as parameter adjustments for efficient culture plate detection, real-time monitoring of training progress, and direct visualization of classification results, thus making it accessible to both researchers and practitioners, regardless of their technical expertise. 
 
-Further development of FungID is expected to be particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research.
+Further development of FungID is expected to be particularly valuable in clinical settings, where prompt and accurate fungal identification is crucial for effective diagnosis and treatment, ultimately contributing to improved patient outcomes and advancing mycological research. The FungID algorithm is outlined in the workflow diagram below.
 
 ![FungID algorithm](https://i.imgur.com/5zLDS5E.png "FungID algorithm")
 
