@@ -1,11 +1,15 @@
-import os
-import subprocess
 import sys
+import subprocess
+import pkg_resources
 
-# Function to check if a package is installed
 def check_and_install(package):
+    package_name, version = package.split('==')
     try:
-        __import__(package)
+        dist = pkg_resources.get_distribution(package_name)
+        if dist.version == version:
+            print(f"{package_name} {version} is already installed.")
+        else:
+            raise ImportError
     except ImportError:
         try:
             subprocess.check_call([sys.executable, "-m", "pip", "install", package])
