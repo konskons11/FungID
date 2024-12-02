@@ -28,7 +28,7 @@ FungID operates on Python 3.8.5 and requires the following dependencies:
 
 _Note: The FungID application will automatically detect and install any missing dependencies._
 
-To launch the FungID application, firstly download the latest FungID Python script release from GitHub, navigate to the directory where the script was downloaded, and execute the script using the following command:
+To launch the FungID application, download the latest FungID Python script release from GitHub, navigate to the directory where the script was downloaded, and execute the script using the following command:
 
 ```sh
 python FungID.py
