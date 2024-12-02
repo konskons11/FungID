@@ -13,7 +13,7 @@ The FungID algorithm is outlined in the workflow diagram below.
 
 ## User manual
 
-Welcome to FungID software! This user-friendly application is designed to help you classify fungal species efficiently. This manual will guide you through the various features and functionalities of the GUI to ensure you get the most out of the application.
+FungID is a user-friendly application designed to help you classify fungal species efficiently. This manual will guide you through the various features and functionalities of the GUI to ensure you get the most out of the application.
 
 ### Installation
 
