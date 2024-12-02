@@ -43,12 +43,6 @@ Testing Mode: For testing the model on new images or using a pre-trained model f
 
 _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, while the supported model format is *.h5_
 
-Parameter Adjustments
-
-Circle Detection: Adjust parameters for detecting circular regions in images, such as minRadius, maxRadius, param1, and param2.
-
-Image Augmentation: Configure settings for augmenting training images, including rotation range, width shift range, height shift range, and horizontal flip.
-
 **Training Mode**
 
 Load Training Data: Click the button to select and load the folder containing your training images.
@@ -61,9 +55,16 @@ Early Stopping & Checkpointing: These features are automatically enabled to prev
 
 Load Model: Select a pre-trained model file to load into the application.
 
-Load Images: Select and load the images you want to classify.
+Load Images: Select and load the image(s) you want to classify.
 
 Classify Images: Click the button to start the classification process. The results will be displayed in the GUI, showing the predicted species and associated probabilities.
+
+**Parameter Adjustments**
+
+Circle Detection: Adjust parameters for detecting circular regions in images, such as minRadius, maxRadius, param1, and param2.
+
+Image Augmentation: Configure settings for augmenting training images, including rotation range, width shift range, height shift range, and horizontal flip.
+
 
 Results Display
 
