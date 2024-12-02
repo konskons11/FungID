@@ -20,7 +20,7 @@ FungID is a user-friendly application designed to help you classify fungal speci
 FungID operates on Python 3.8.5 and requires the following dependencies:
 * TensorFlow
 * OpenCV
-* Pillow (PIL)
+* Pillow
 * Numpy
 * Matplotlib
 * Tkinter
