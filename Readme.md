@@ -35,16 +35,13 @@ python FungID.py
 ```
 
 ### Main Interface
-Upon launching the application, you will see the main interface divided into several sections:
+Upon launching the application, you will see the main interface divided into 2 main sections:
 
-Mode Selection
+Training Mode: For training the model with new images (supported image formats *.jpg, *.jpeg, *.png, *.bmp, *.tiff)
 
-supported image formats
-"*.jpg *.jpeg *.png *.bmp *.tiff"
+Testing Mode: For testing the model on new images or using a pre-trained model for classification (supported image formats *.jpg, *.jpeg, *.png, *.bmp, *.tiff).
 
-Training Mode: For training the model with new images.
-
-Testing Mode: For testing the model on new images or using a pre-trained model for classification.
+_NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, while the supported model format is *.h5_
 
 Parameter Adjustments
 
@@ -52,7 +49,7 @@ Circle Detection: Adjust parameters for detecting circular regions in images, su
 
 Image Augmentation: Configure settings for augmenting training images, including rotation range, width shift range, height shift range, and horizontal flip.
 
-Training Mode
+**Training Mode**
 
 Load Training Data: Click the button to select and load the folder containing your training images.
 
@@ -60,7 +57,7 @@ Start Training: Begin the training process. The GUI will display a progress bar 
 
 Early Stopping & Checkpointing: These features are automatically enabled to prevent overfitting and save the best performing model.
 
-Testing Mode
+**Testing Mode**
 
 Load Model: Select a pre-trained model file to load into the application.
 
