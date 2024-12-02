@@ -17,7 +17,7 @@ FungID is a user-friendly application designed to help you classify fungal speci
 
 ### Installation
 
-FungID runs under Python 3.8.5 with the following dependencies/prerequisites:
+FungID operates on Python 3.8.5 and requires the following dependencies:
 TensorFlow
 OpenCV
 Pillow (PIL)
@@ -26,13 +26,15 @@ Matplotlib
 Tkinter
 H5py
 
-The FungID application will automatically scan for the required dependencies and will install them if missing. To launch the FungID application, simply download the latest FungID Python script release from Github, go to the directory of the downloaded software and execute using:
+_Note: The FungID application will automatically detect and install any missing dependencies._
+
+To launch the FungID application, firstly download the latest FungID Python script release from GitHub, navigate to the directory where the script was downloaded, and execute the script using the following command:
 
 ```sh
 python FungID.py
 ```
 
-Main Interface
+### Main Interface
 Upon launching the application, you will see the main interface divided into several sections:
 
 Mode Selection
