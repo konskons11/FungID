@@ -14,7 +14,7 @@ def check_and_install(package):
 
 # Check and install necessary packages
 required_packages = [
-    "tkinter", "cv2", "numpy", "h5py", "Pillow", "tensorflow", "matplotlib"
+    "opencv-python==4.9.0.80", "numpy==1.22.0", "h5py==3.7.0", "Pillow==9.4.0", "tensorflow==2.11.1", "matplotlib==3.7.0"
 ]
 
 for package in required_packages:
