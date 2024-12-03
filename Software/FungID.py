@@ -622,7 +622,7 @@ def center_window(window, width, height):
 
 # GUI
 window = tk.Tk()
-window.title("Fungi Species Classifier")
+window.title("FungID")
 window_width = 800
 window_height = 800
 center_window(window, window_width, window_height)
