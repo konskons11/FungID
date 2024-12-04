@@ -37,8 +37,7 @@ python FungID.py
 ### Main Interface
 Upon launching the application, the main interface is displayed, which is divided into 2 main sections:
 
-![FungID main_screen](https://i.imgur.com/DYFzYqH.png "FungID main_screen")
-
+![FungID main screen](https://i.imgur.com/DYFzYqH.png "FungID main screen")
 
 Training Mode: For training a model with the images of interest.
 
@@ -48,6 +47,8 @@ _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, whil
 
 **Training Mode**
 
+![FungID training mode main screen](https://i.imgur.com/qsElKQ9.png "FungID training mode main screen")
+
 Load Training Data: Click the button to select and load the folder containing your training images.
 
 Start Training: Begin the training process. The GUI will display a progress bar to show the training progress in real-time.
@@ -55,6 +56,8 @@ Start Training: Begin the training process. The GUI will display a progress bar 
 Early Stopping & Checkpointing: These features are automatically enabled to prevent overfitting and save the best performing model.
 
 **Testing Mode**
+
+![FungID testing mode main screen](https://i.imgur.com/Y6JaAEF.png "FungID testing mode main screen")
 
 Load Model: Select a pre-trained model file to load into the application.
 
