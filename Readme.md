@@ -53,15 +53,15 @@ _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, whil
 
 A) Mode selection button: Allows users to enable/switch to "TRAIN MODE", while disabling "TEST MODE". 
 
-B) File Path display text field: Displays the path to the dataset being used. 
+B) File Path display text field: Displays the path to the input image dataset. 
 
-C) Train Model button: Initiates the model training process. 
+C) Train Model button: Opens a file dialog to select the directory of the input image dataset and once selected, the model training process is inititated. 
 
-D) Progress Bar: Indicates the completion percentage of the training process.
+D) Progress Bar: Indicates the completion percentage of the training process real-time.
 
-E) Model Performance plot area: Displays training and validation metrics (Accuracy, Loss). 
+E) Model Performance plot area: Displays training and validation metrics (Accuracy, Loss) after completion of the training process.
 
-F) Model Performance plot buttons: Handles the generated plot with the corresponding buttons (explained from left to right)
+F) Model Performance plot buttons: Handles the generated plot like below (buttons explained from left to right)
 1. Resets graph to original view
 2. Moves backwards to previous view
 3. Moves forwards to next view
@@ -71,12 +71,6 @@ F) Model Performance plot buttons: Handles the generated plot with the correspon
 7. Saves the figure
 
 G) Output Console: Displays log messages of the training process.
-
-Load Training Data: Click the button to select and load the folder containing your training images.
-
-Start Training: Begin the training process. The GUI will display a progress bar to show the training progress in real-time.
-
-Early Stopping & Checkpointing: These features are automatically enabled to prevent overfitting and save the best performing model.
 
 ### TEST MODE
 
