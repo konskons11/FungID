@@ -66,11 +66,11 @@ F) Model Performance plot buttons: Handles the generated plot with the correspon
 2. Moves backwards to previous view
 3. Moves forwards to next view
 4. Moves graph accordingly (Left button pans, Right button zooms x/y fixes axis, CTRL fixes aspect)
-5. Zooms to the specified rectangle (x/y fixes axis)
+5. Zooms to the specified rectangular area (x/y fixes axis)
 6. Configures subplots
 7. Saves the figure
 
-OUTPUT CONSOLE: Log Messages: Displays logs of the training process, including messages like "Training cycle completed 11/25", "Training cycle completed 12/25", etc.
+G) Output Console: Displays log messages of the training process.
 
 Load Training Data: Click the button to select and load the folder containing your training images.
 
