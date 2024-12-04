@@ -53,7 +53,7 @@ A) Mode selection button: Allows users to enable/switch to "TRAIN MODE", while d
 
 B) Image(s) directory text field: Displays the path to the input image dataset. 
 
-C) Train Model button: Click to open a file dialog to select the directory of the input image dataset and once selected, the model training process is inititated. 
+C) Train Model button: Click to open a file dialog to select the directory of the input image dataset. The input dataset, consisting of images of known fungi species, should be organized in a directory structure, with each subdirectory representing a different species. Once the input image dataset is selected, the model training process is inititated.
 
 D) Progress Bar: Indicates the completion percentage of the training process real-time.
 
