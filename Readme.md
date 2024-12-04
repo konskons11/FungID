@@ -107,19 +107,16 @@ The user may adjust the following parameters for optimal classification results:
 
 The dafault values for these parameters are:
 * dp=1.0
-* mindist=100
+* minDist=100
 * param1=200
 * param2=100
 * minRadius=0
 * maxRadius=0
 
-A few examples of adjusting a specific parameter are presented below:
+An indicative example of parameter adjustment is presented below:
+![FungID parameter adjustment example](https://i.imgur.com/hexEQrZ.jpg "FungID parameter adjustment example")
 
-* minDist=50
-
-* minDist=100
-
-* minDist=200
+_NOTE: The detected circular regions are outlined in bright green circumferences with their center points highlighted red and their corresponding names in blue colored text on the right cide of the detected circular regions._
 
 ### Software key features
 
