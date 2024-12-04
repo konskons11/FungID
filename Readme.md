@@ -39,13 +39,13 @@ Upon launching the application, the main interface is displayed, which is divide
 
 ![FungID main screen](https://i.imgur.com/DYFzYqH.png "FungID main screen")
 
-Training Mode: For training a model with the images of interest.
+TRAIN MODE: For training a model with the images of interest.
 
-Testing Mode: For testing a pre-trained model on the desired images for classification.
+TEST MODE: For testing a pre-trained model on the desired images for classification.
 
 _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, while the supported model format is *.h5_
 
-**Training Mode**
+**TRAIN MODE**
 
 ![FungID training mode main screen](https://i.imgur.com/qsElKQ9.png "FungID training mode main screen")
 
@@ -55,7 +55,7 @@ Start Training: Begin the training process. The GUI will display a progress bar 
 
 Early Stopping & Checkpointing: These features are automatically enabled to prevent overfitting and save the best performing model.
 
-**Testing Mode**
+**TEST MODE**
 
 ![FungID testing mode main screen](https://i.imgur.com/Y6JaAEF.png "FungID testing mode main screen")
 
@@ -82,7 +82,7 @@ Save Reports: Options to save classification reports and processed images.
 
 ### Software key features
 
-**Training Mode**
+**TRAIN MODE**
 
 _Custom Model Training:_ Input the desired image(s) and utilize built-in features such as data augmentation, early stopping, and model checkpointing to train and ensure the best-performing version of your model is saved.
 
@@ -90,7 +90,7 @@ _Data Augmentation:_ ImageDataGenerator is utilized to enhance the training data
 
 _Real-Time Monitoring and Performance Metrics:_ The GUI displays real-time training progress and plots model performance metrics, including accuracy, loss, validation accuracy, and validation loss, with an option to be exported as graphs by the user.
 
-**Testing Mode**
+**TEST MODE**
 
 _Parameter Adjustments for Fungal Species Detection:_ The user is able to detect multiple culture plates within a single input image and also tweak various software parameters in order to optimize fungal species detection.
 
