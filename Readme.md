@@ -114,11 +114,12 @@ The dafault values for these parameters are:
 * maxRadius=0
 
 A few examples of adjusting a specific parameter are presented below:
-minDist=50
 
-minDist=100
+* minDist=50
 
-minDist=200
+* minDist=100
+
+* minDist=200
 
 ### Software key features
 
