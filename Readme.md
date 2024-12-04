@@ -43,11 +43,29 @@ TRAIN MODE: For training a model with the images of interest.
 
 TEST MODE: For testing a pre-trained model on the desired images for classification.
 
+Clicking on the respective rectangular buttons, enables the mode selected and disables the opposite mode.
+
 _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, while the supported model format is *.h5_
 
 ### TRAIN MODE
 
 ![FungID training mode main screen](https://i.imgur.com/qsElKQ9.png "FungID training mode main screen")
+
+A) Mode selection button: Allows users to enable/switch to "TRAIN MODE", while disabling "TEST MODE". 
+B) File Path display text field: Displays the path to the dataset being used. 
+C) Train Model button: Initiates the model training process. 
+D) Progress Bar: Indicates the completion percentage of the training process.
+E) Model Performance plot area: Displays training and validation metrics (Accuracy, Loss). 
+F) Model Performance plot buttons: Handles the generated plot with the corresponding buttons (from left to right)
+1. Resets graph to original view
+2. Moves backwards to previous view
+3. Moves forwards to next view
+4. Moves graph accordingly (Left button pans, Right button zooms x/y fixes axis, CTRL fixes aspect)
+5. Zooms to the specified rectangle (x/y fixes axis)
+6. Configures subplots
+7. Saves the figure
+
+OUTPUT CONSOLE: Log Messages: Displays logs of the training process, including messages like "Training cycle completed 11/25", "Training cycle completed 12/25", etc.
 
 Load Training Data: Click the button to select and load the folder containing your training images.
 
