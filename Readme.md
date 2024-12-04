@@ -61,7 +61,7 @@ D) Progress Bar: Indicates the completion percentage of the training process.
 
 E) Model Performance plot area: Displays training and validation metrics (Accuracy, Loss). 
 
-F) Model Performance plot buttons: Handles the generated plot with the corresponding buttons (from left to right)
+F) Model Performance plot buttons: Handles the generated plot with the corresponding buttons (explained from left to right)
 1. Resets graph to original view
 2. Moves backwards to previous view
 3. Moves forwards to next view
