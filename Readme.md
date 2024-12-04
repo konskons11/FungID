@@ -35,7 +35,7 @@ python FungID.py
 ```
 
 ### Main Interface
-Upon launching the application, the main interface is displayed, which is divided into 2 main sections:
+Upon launching the application, the main GUI is displayed, which is divided into 2 sections:
 
 ![FungID main screen](https://i.imgur.com/DYFzYqH.png "FungID main screen")
 
