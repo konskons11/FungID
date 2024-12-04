@@ -37,6 +37,9 @@ python FungID.py
 ### Main Interface
 Upon launching the application, the main interface is displayed, which is divided into 2 main sections:
 
+![FungID main_screen](https://i.imgur.com/DYFzYqH.png "FungID main_screen")
+
+
 Training Mode: For training a model with the images of interest.
 
 Testing Mode: For testing a pre-trained model on the desired images for classification.
