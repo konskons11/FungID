@@ -105,6 +105,20 @@ The user may adjust the following parameters for optimal classification results:
 5. minRadius (Minimum Circle Radius) defines the minimum radius of the circles to be detected.
 6. maxRadius (Maximum Circle Radius) defines the maximum radius of the circles to be detected.
 
+The dafault values for these parameters are:
+* dp=1.0
+* mindist=100
+* param1=200
+* param2=100
+* minRadius=0
+* maxRadius=0
+
+A few examples of adjusting a specific parameter are presented below:
+minDist=50
+
+minDist=100
+
+minDist=200
 
 ### Software key features
 
