@@ -52,10 +52,15 @@ _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, whil
 ![FungID training mode main screen](https://i.imgur.com/qsElKQ9.png "FungID training mode main screen")
 
 A) Mode selection button: Allows users to enable/switch to "TRAIN MODE", while disabling "TEST MODE". 
+
 B) File Path display text field: Displays the path to the dataset being used. 
+
 C) Train Model button: Initiates the model training process. 
+
 D) Progress Bar: Indicates the completion percentage of the training process.
+
 E) Model Performance plot area: Displays training and validation metrics (Accuracy, Loss). 
+
 F) Model Performance plot buttons: Handles the generated plot with the corresponding buttons (from left to right)
 1. Resets graph to original view
 2. Moves backwards to previous view
