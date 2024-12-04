@@ -41,8 +41,6 @@ TRAIN MODE: For training a model with the images of interest.
 
 TEST MODE: For testing a pre-trained model on the desired images for classification.
 
-Clicking on the respective rectangular buttons, enables the mode selected and disables the opposite mode.
-
 ![FungID main screen](https://i.imgur.com/DYFzYqH.png "FungID main screen")
 
 _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, while the supported model format is *.h5_
