@@ -74,12 +74,46 @@ G) Output Console: Displays log messages of the training process.
 
 ![FungID testing mode main screen](https://i.imgur.com/Y6JaAEF.png "FungID testing mode main screen")
 
+TEST MODE Section
+Model Loader: Options to load pre-trained models.
+
+Classifier Adjustment: Tools for adjusting classifier settings. For example: dp=1.0, mindist=100, param1=200, param2=100, minRadius=0, maxRadius=0.
+
+Image Classification: Functionality to classify new images.
+
+Report and Image Saving: Options to save classification reports and images.
+
+OUTPUT CONSOLE
+Log Messages: Displays logs of the training process, including messages such as:
+
+Training cycle completed 11/25
+
+Training cycle completed 12/25
+
+Loaded model file: Indicates the file path of the loaded model.
+
+Classifier settings: Shows the settings used for the classifier.
+
+Input image: Displays the path of the input image.
+
+Detected Circle C1: Shows detected circles in the image.
+
+Predicted Species: Lists species predictions with corresponding confidence percentages (e.g., Aspergillus_flavus 30.66%, Aspergillus_nidulans 24.59%).
+
+
 Load Model: Select a pre-trained model file to load into the application.
 
 Load Images: Select and load the image(s) you want to classify.
 
 Classify Images: Click the button to start the classification process. The results will be displayed in the GUI, showing the predicted species and associated probabilities.
 
+Troubleshooting
+No Detected Circles: If the application fails to detect circles in images, adjust the circle detection parameters (e.g., minRadius, maxRadius, param1, param2) and retry.
+
+Slow Performance: Ensure your system meets the recommended hardware requirements. Training and classification can be computationally intensive.
+
+Loading Issues: Double-check the paths to your image and model files to ensure they are correctly specified.
+ 
 ### Parameter Adjustments
 
 Circle Detection: Adjust parameters for detecting circular regions in images, such as minRadius, maxRadius, param1, and param2.
@@ -112,11 +146,3 @@ _Parameter Adjustments for Fungal Species Detection:_ The user is able to detect
 _Image Processing:_ Preprocesses images using OpenCV techniques, including Gaussian blurring and Hough Circle Transform for detecting the circular regions of culture plates with the examined fungal species.
 
 _Comprehensive Results:_ Visualize detected circular regions of culture plates and display classified results with predicted species and confidence levels. (Options to save classification reports and processed images are also provided)
-
-Troubleshooting
-No Detected Circles: If the application fails to detect circles in images, adjust the circle detection parameters (e.g., minRadius, maxRadius, param1, param2) and retry.
-
-Slow Performance: Ensure your system meets the recommended hardware requirements. Training and classification can be computationally intensive.
-
-Loading Issues: Double-check the paths to your image and model files to ensure they are correctly specified.
- 
