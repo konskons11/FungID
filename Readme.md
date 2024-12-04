@@ -45,7 +45,7 @@ TEST MODE: For testing a pre-trained model on the desired images for classificat
 
 _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, while the supported model format is *.h5_
 
-**TRAIN MODE**
+### TRAIN MODE
 
 ![FungID training mode main screen](https://i.imgur.com/qsElKQ9.png "FungID training mode main screen")
 
@@ -55,7 +55,7 @@ Start Training: Begin the training process. The GUI will display a progress bar 
 
 Early Stopping & Checkpointing: These features are automatically enabled to prevent overfitting and save the best performing model.
 
-**TEST MODE**
+### TEST MODE
 
 ![FungID testing mode main screen](https://i.imgur.com/Y6JaAEF.png "FungID testing mode main screen")
 
@@ -65,7 +65,7 @@ Load Images: Select and load the image(s) you want to classify.
 
 Classify Images: Click the button to start the classification process. The results will be displayed in the GUI, showing the predicted species and associated probabilities.
 
-**Parameter Adjustments**
+### Parameter Adjustments
 
 Circle Detection: Adjust parameters for detecting circular regions in images, such as minRadius, maxRadius, param1, and param2.
 
