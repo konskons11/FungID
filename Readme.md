@@ -51,9 +51,9 @@ _NOTE: The supported image formats are *.jpg, *.jpeg, *.png, *.bmp, *.tiff, whil
 
 A) Mode selection button: Allows users to enable/switch to "TRAIN MODE", while disabling "TEST MODE". 
 
-B) File Path display text field: Displays the path to the input image dataset. 
+B) Image(s) directory text field: Displays the path to the input image dataset. 
 
-C) Train Model button: Opens a file dialog to select the directory of the input image dataset and once selected, the model training process is inititated. 
+C) Train Model button: Click to open a file dialog to select the directory of the input image dataset and once selected, the model training process is inititated. 
 
 D) Progress Bar: Indicates the completion percentage of the training process real-time.
 
@@ -66,7 +66,7 @@ F) Model Performance plot buttons: Handles the generated plot like below (button
 4. Moves graph accordingly (Left button pans, Right button zooms x/y fixes axis, CTRL fixes aspect)
 5. Zooms to the specified rectangular area (x/y fixes axis)
 6. Configures subplots
-7. Saves the figure
+7. Saves the figure as PDF file
 
 G) Output Console: Displays log messages of the training process.
 
@@ -74,60 +74,37 @@ G) Output Console: Displays log messages of the training process.
 
 ![FungID testing mode main screen](https://i.imgur.com/Y6JaAEF.png "FungID testing mode main screen")
 
-TEST MODE Section
-Model Loader: Options to load pre-trained models.
+H) Mode selection button: Allows users to enable/switch to "TEST MODE", while disabling "TRAIN MODE". 
 
-Classifier Adjustment: Tools for adjusting classifier settings. For example: dp=1.0, mindist=100, param1=200, param2=100, minRadius=0, maxRadius=0.
+I) Loaded model directory text field: Displays the path to the input pre-trained model.
 
-Image Classification: Functionality to classify new images.
+J) Load Model button: Click to load a pre-trained model.
 
-Report and Image Saving: Options to save classification reports and images.
+K) Parameter Adjustments text field: Displays the current settings of the software's adjustable parameters.
 
-OUTPUT CONSOLE
-Log Messages: Displays logs of the training process, including messages such as:
+L) Adjust classifier button: Click to open a file dialog for adjusting the software's main settings/parameters.
 
-Training cycle completed 11/25
+M) Classified image(s) directory text field: Displays the image(s) directory to be classified.
 
-Training cycle completed 12/25
+N) Classify image(s) button: Click to perform image(s) classification.
 
-Loaded model file: Indicates the file path of the loaded model.
+O) Save Report button: Click to save the generated report in the output log console as text file.
 
-Classifier settings: Shows the settings used for the classifier.
+P) Save Image(s) button: Click to save the processed image(s) after completion of classification.
 
-Input image: Displays the path of the input image.
-
-Detected Circle C1: Shows detected circles in the image.
-
-Predicted Species: Lists species predictions with corresponding confidence percentages (e.g., Aspergillus_flavus 30.66%, Aspergillus_nidulans 24.59%).
+Q) Output Console: Displays log messages of the training process.
 
 
-Load Model: Select a pre-trained model file to load into the application.
-
-Load Images: Select and load the image(s) you want to classify.
-
-Classify Images: Click the button to start the classification process. The results will be displayed in the GUI, showing the predicted species and associated probabilities.
-
-Troubleshooting
-No Detected Circles: If the application fails to detect circles in images, adjust the circle detection parameters (e.g., minRadius, maxRadius, param1, param2) and retry.
-
-Slow Performance: Ensure your system meets the recommended hardware requirements. Training and classification can be computationally intensive.
-
-Loading Issues: Double-check the paths to your image and model files to ensure they are correctly specified.
- 
 ### Parameter Adjustments
 
-Circle Detection: Adjust parameters for detecting circular regions in images, such as minRadius, maxRadius, param1, and param2.
+The user may adjust the following parameters for optimal classification results:
+1. dp (Inverse Ratio of the Accumulator Resolution) is the inverse ratio of the accumulator resolution to the image resolution (e.g. if dp=1.0, the accumulator has the same resolution as the original image, but if dp=2.0, the accumulator has half the resolution of the original image).
+2. minDist (Minimum Distance Between Circles) specifies the minimum distance between the centers of detected circles (i.e the threshold of detecting multiple nearby circles as separate entities)
+3. param1 (Canny Edge Detector Threshold) is the higher threshold passed to the Canny edge detector (the lower one is twice smaller), which is used for edge detection in the image.
+4. param2 (Accumulator Threshold for Circle Centers) is the threshold for center detection in the accumulator (The smaller it is, the more false circles may be detected. The larger it is, the more accurate the circle detection will be)
+5. minRadius (Minimum Circle Radius) defines the minimum radius of the circles to be detected.
+6. maxRadius (Maximum Circle Radius) defines the maximum radius of the circles to be detected.
 
-Image Augmentation: Configure settings for augmenting training images, including rotation range, width shift range, height shift range, and horizontal flip.
-
-
-Results Display
-
-Log Console: View detailed logs and updates on the training or testing process.
-
-Visualization: Visualize detected circular regions in images, with green circumferences and red center points highlighted alongside their name in blue text as in the format Cn (where n is the number of the detected circular region). Classified results will be displayed with the predicted species and confidence levels.
-
-Save Reports: Options to save classification reports and processed images.
 
 ### Software key features
 
