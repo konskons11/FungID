@@ -116,7 +116,7 @@ The dafault values for these parameters are:
 An indicative example of parameter adjustment is presented below:
 ![FungID parameter adjustment example](https://i.imgur.com/hexEQrZ.jpg "FungID parameter adjustment example")
 
-_NOTE: The detected circular regions are outlined in bright green circumferences with their center points highlighted red and their corresponding names in blue colored text on the right cide of the detected circular regions._
+_NOTE: The detected circular regions are outlined in bright green circumferences with their center points highlighted red, while their corresponding names are annotated with blue font on the right cide of the detected circular regions._
 
 ### Software key features
 
