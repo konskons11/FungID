@@ -297,7 +297,10 @@ def plot_training_history(history):
     toolbar = NavigationToolbar2Tk(canvas, plot_frame)
     toolbar.update()
 
-    toolbar.canvas.get_default_filetype = lambda: 'pdf'    
+    toolbar.canvas.get_default_filetype = lambda: 'pdf'
+
+    #canvas.get_tk_widget().place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+    
     canvas.draw()
 
 
@@ -321,6 +324,7 @@ def load_model_for_testing():
         with h5py.File(model_load_path, 'r') as f:
             class_labels = list(f.attrs['class_labels'])
     except KeyError:
+        ### FIX THIS TO DISPLAY MESSAGE AND DELETE LOAD MODEL DIR
         print("Attribute 'class_labels' not found in the HDF5 file.")
         # Handle the case where the attribute is not found
         class_labels = []
@@ -389,6 +393,23 @@ def classifier():
                 img = cv2.imread(path)
                 resize_scale = 0.1
                 image_resized = cv2.resize(img, (0, 0), fx=resize_scale, fy=resize_scale, interpolation=cv2.INTER_AREA)
+
+                ### GRAYSCALE
+                #gray = cv2.cvtColor(image_resized, cv2.COLOR_BGR2GRAY)
+#   
+                ## Apply Gaussian blur
+                #blurred = cv2.GaussianBlur(gray, (3, 3), 1.5)
+#   
+                ## Compute gradients using Sobel operator
+                #grad_x = cv2.Sobel(blurred, cv2.CV_64F, 1, 0, ksize=3)
+                #grad_y = cv2.Sobel(blurred, cv2.CV_64F, 0, 1, ksize=3)
+#   
+                ## Compute gradient magnitude
+                #magnitude = cv2.magnitude(grad_x, grad_y)
+                ## Normalize gradient magnitude
+                #normalized_magnitude = cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX).astype(np.uint8)
+                ####
+
 
                 ### RGB
                 # Apply Gaussian blur
@@ -623,7 +644,7 @@ def center_window(window, width, height):
 
 # GUI
 window = tk.Tk()
-window.title("FungID")
+window.title("Fungi Species Classifier")
 window_width = 800
 window_height = 800
 center_window(window, window_width, window_height)
@@ -703,3 +724,4 @@ output_text.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 output_text.config(state=tk.DISABLED)  # Make the output console read-only
 
 window.mainloop()
+
