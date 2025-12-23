@@ -17,7 +17,7 @@ FungID is a user-friendly application designed to help you classify fungal speci
 
 ### Installation
 
-FungID was initally developed on [Python 3.8.5](https://www.python.org/downloads/release/python-385/) and requires the following dependencies:
+FungID requires the installation of [Python 3.8.5](https://www.python.org/downloads/release/python-385/), including the following dependencies:
 * h5py==3.7.0
 * matplotlib==3.7.0
 * numpy==1.22.0
