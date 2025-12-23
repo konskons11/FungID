@@ -39,7 +39,7 @@ Upon launching the application, the main GUI is displayed, which is divided into
 
 TRAIN MODE: For training a model with the images of interest.
 
-TEST MODE: For testing a pre-trained model on the desired images for classification.
+TEST MODE: For testing a pre-trained model on the desired images for classification. We highly recommend downloading and using the [latest pre-trained model](https://github.com/konskons11/FungID/blob/main/Models/Ref_model.h5) from our team.
 
 ![FungID main screen](https://i.imgur.com/DYFzYqH.png "FungID main screen")
 
