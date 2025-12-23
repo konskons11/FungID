@@ -1,29 +1,44 @@
 import os
 import sys
 import subprocess
-import pkg_resources
+import importlib.metadata
+from packaging import version # If not available, use: pip install packaging
 
 def check_and_install(package):
-    package_name, version = package.split('==')
+    # Splits package name and version (e.g., "numpy==1.22.0")
+    if '==' in package:
+        package_name, req_version = package.split('==')
+    else:
+        package_name, req_version = package, None
+
     try:
-        dist = pkg_resources.get_distribution(package_name)
-        if dist.version == version:
-            print(f"{package_name} {version} is already installed.")
-        else:
-            raise ImportError
-    except ImportError:
+        # Modern 2025 way to check installed packages
+        current_version = importlib.metadata.version(package_name)
+        if req_version and current_version != req_version:
+            print(f"Updating {package_name} from {current_version} to {req_version}...")
+            raise importlib.metadata.PackageNotFoundError
+        print(f"{package_name} ({current_version}) is already installed.")
+        
+    except importlib.metadata.PackageNotFoundError:
+        print(f"Installing {package}...")
         try:
+            # Using -m pip is the most reliable method on Windows
             subprocess.check_call([sys.executable, "-m", "pip", "install", package])
         except subprocess.CalledProcessError as e:
-            print(f"Failed to install {package}: {e}")
+            print(f"Error: Could not install {package}. Check your internet or permissions.")
 
-# Check and install necessary packages
+# Required packages for FungID
 required_packages = [
-    "opencv-python==4.9.0.80", "numpy==1.22.0", "h5py==3.7.0", "Pillow==9.4.0", "tensorflow==2.11.1", "matplotlib==3.7.0"
+    "opencv-python==4.9.0.80", 
+    "numpy==1.22.0", 
+    "h5py==3.7.0", 
+    "Pillow==9.4.0", 
+    "tensorflow==2.11.1", 
+    "matplotlib==3.7.0"
 ]
 
-for package in required_packages:
-    check_and_install(package)
+for pkg in required_packages:
+    check_and_install(pkg)
 
 # Now import the packages
 import tkinter as tk
